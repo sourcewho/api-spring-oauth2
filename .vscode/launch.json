@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringOauth2Application<spring-oauth2>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "source.springoauth2.SpringOauth2Application",
+            "projectName": "spring-oauth2",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
