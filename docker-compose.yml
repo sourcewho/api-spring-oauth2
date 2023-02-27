@@ -7,6 +7,9 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: series
+    volumes:
+      - ./database:/var/lib/postgresql/data
     ports:
       - 5432:5432
     restart: always
@@ -19,6 +22,7 @@ services:
     environment:
       PGADMIN_DEFAULT_EMAIL: admin@admin.com
       PGADMIN_DEFAULT_PASSWORD: admin
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
     ports:
       - 8081:80
     depends_on:

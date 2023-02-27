@@ -26,7 +26,7 @@ public class UserEntity implements Serializable {
 
     @Id
     @GeneratedValue()
-    @Column(name = "user_id")
+    @Column(name = "user_id",  )
     private UUID userId;
 
     @Basic
@@ -34,7 +34,7 @@ public class UserEntity implements Serializable {
     private String name;
 
     @Basic
-    @Column(name = "username", nullable = false)
+    @Column(name = "username", nullable = false, unique = true)
     private String username;
 
     @Basic
